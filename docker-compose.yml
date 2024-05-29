@@ -12,7 +12,7 @@ services:
       # docker run -p 3000:3000 app と一緒
     volumes:
       - './app:/usr/src/app'
-      - '.app/node_modules:usr/src/app/node_modules'
+      - './app/node_modules:usr/src/app/node_modules'
       # ローカルPCの./appフォルダと、コンテナ内の ~/usr/src/appフォルダを同期させる。
       # docker exec -it express-app sh で確認できる
 
